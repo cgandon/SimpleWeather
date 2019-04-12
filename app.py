@@ -30,7 +30,8 @@ def index():
     ds_url = 'https://api.darksky.net/forecast/{}/{},{}'.format(ds_key, lat,long)
     weather = requests.get(ds_url).json()
     tomorrow = weather["daily"]["data"][1]["summary"]
-    city = weather["timezone"]
+#    city = weather["timezone"]
+    city = requests.get('https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat={}&lon={}'.format(lat,long)).json()['name']
     return render_template("index.html", lat = lat, long = long, weather = tomorrow, city = city)
 
 '''

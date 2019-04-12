@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Champagne_Limousines';
+    src: url('fonts/Champagne_Limousines.eot');
+    src: url('fonts/Champagne_Limousines.eot') format('embedded-opentype'),
+         url('fonts/Champagne_Limousines.woff2') format('woff2'),
+         url('fonts/Champagne_Limousines.woff') format('woff'),
+         url('fonts/Champagne_Limousines.ttf') format('truetype'),
+         url('fonts/Champagne_Limousines.svg#Champagne_Limousines') format('svg');
+}
+
+html {
+  margin: 0;
+  transition: all .5s;
+}
+
+.full-header{
+  height:100vh;
+}
+
+header{
+  font-family: "Champagne_limousines";
+}
+
+body{
+  font-family: "Champagne_limousines";
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+a:hover{
+  color: lightgrey;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #53D769;
+}
+
+img {
+  height:50%;
+  width: 50%;
+}
+
+.sous-titre {
+  font-size:1.4rem;
+}
+
+.pricing img {
+  height:40%;
+  width: 40%;
+}
+
+header {
+  background:#1a1365;
+  color:white;
+  background-size:cover;
+  text-align:center;
+  height:80vh;
+}
+
+.center-content {
+  display:flex;
+  height:90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-prop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: auto;
+  font-size:3.2em;
+}
+
+
+.CTA-projet, .CTA-etudiant {
+  font-size:1.8em;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .5s;
+  margin: auto;
+  text-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px black;
+}
+
+.CTA-projet {
+  background-color: #53D769;
+}
+
+.CTA-etudiant {
+  background-color: #e22363;
+}
+
+.CTA-projet:hover, .CTA-etudiant:hover{
+  border:none;
+}
+
+.main-nav{
+  background-color:rgba(0, 0, 0, 0);
+  margin: auto;
+}
+
+.nav {
+  display:flex;
+  list-style-type:none;
+  font-size:20px;
+  margin:0;
+  padding:5px;
+}
+
+.nav .name{
+  color:white;
+  margin-right:auto;
+}
+
+.nav li{
+  padding: 5px 10px 10px 10px;
+}
+
+.group-title{
+  text-align:center;
+}
+
+.presentation {
+  text-align: center;
+  margin: auto;
+  box-sizing:border-box;
+}
+
+
+.separateur {
+  background-color: #53D769;
+}
+
+.profil{
+  padding:0;
+  color:black;
+  border-radius: 10px;
+}
+
+.profil a {
+  color:black;
+}
+
+.pricing{
+  color:black;
+  border-radius:10px;
+}
+
+.process{
+  color:black;
+  border-radius:10px;
+}
+
+.profil h1, .process h1, .pricing h1 {
+  color:black;
+  font-size:1.5em;
+  text-align:center;
+}
+
+.profil ul, .process ul, .pricing ul {
+  font-size:1em;
+  list-style:none;
+  letter-spacing:.065em;
+}
+
+.profil li, .process li, .pricing li{
+  font-size:1.1em;
+}
+
+
+.group{
+  margin:auto;
+}
+
+.contact{
+  color:white;
+  padding: 20px 0 0 0;
+  margin-top:40px;
+  background-color: #e22363;
+}
+
+.contact h1 {
+  font-size:2.8em;
+}
+
+.contact p {
+  font-size:1.3em;
+}
+
+form {
+    /* Pour le centrer dans la page */
+    width: 100%;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 2em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    width: 120px;
+    text-align: right;
+    font-size:1.3em;
+    margin-right: 1rem;
+}
+
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 80%;
+    height:1.7em;
+    border-radius:10px;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 6em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+
+
+input[type="submit"]{
+  cursor:pointer;
+  margin-top: 10px;
+  font-family: "Champagne_limousines";
+  font-size:1.5em;
+  background:rgba(255, 255, 255, 0);
+  border:2px solid white;
+  color:white;
+  width: 120px;
+  margin-bottom: 30px;
+  padding:5px;
+}
+
+#dernier-projets {
+  height:60vh;
+}
+
+.container {
+  position: relative;
+}
+
+
+.portfolio img, .overlay {
+  border-radius: 10px;
+}
+
+.portfolio img {
+  height: 80%;
+  width: 100%;
+}
+
+
+.center-text-in-image {
+  font-size: 1.2rem;
+  padding:5px;
+  border-radius: 10px;
+  background-color: #53D769;
+  text-align: center;
+}
+
+
+h3 {
+  color:black;
+}
+
+.link-portfolio {
+  text-shadow: 1px 1px 1px grey
+}
+
+footer {
+  height: auto;
+  background: #1a1365;
+}
+
+.copyright {
+  color:white;
+}
+
+
+@media(max-width:1024px) {
+
+  #about {
+    margin:auto 10px;
+  }
+  .title {
+    font-size:1.6rem;
+  }
+
+  .CTA-projet, .CTA-etudiant {
+    font-size:1.3rem;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  form {
+    margin:auto;
+    width:90%;
+  }
+
+  .sous-titre {
+    text-align: center;
+    margin: 10px;
+  }
+
+
+  #dernier-projets {
+    height:auto;
+  }
+
+}
